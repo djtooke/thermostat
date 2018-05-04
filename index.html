@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="bootstrap-4.1.0-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style media="screen" type="text/css">
+
+    #temperature_display {
+      font-size: 100px;
+    }
+    </style>
+
+
+
+
+    <title>Thermostat</title>
+  </head>
+  <body>
+    <div class="row justify-content-center">
+      <h1>Temperature:</h1>
+    </div>
+
+
+
+    <div class="row justify-content-center"><p id="temperature_display"></p>&#8451;</div>
+    <br>
+    <div class="row justify-content-center">
+      <h3>Powersave mode:</h3>
+    </div>
+
+    <div id="powersavemode" class="row justify-content-center">
+    </div>
+
+  <div class="row justify-content-center">
+    <button type="button" class="btn btn-primary">Decrease</button>
+    <button type="button" class="btn btn-danger">Increase</button>
+  </div>
+  <br>
+  <div class="row justify-content-center">
+    <button type="button" class="btn btn-success">Power Save</button>
+    <button type="button" class="btn btn-info">Reset</button>
+  </div>
+
+  <div id="energy_display" class="row justify-content-center"></div>
+  <br>
+  <div class="row justify-content-center">
+  <p>Current temperature in <span id=city></span>:</p><div id="outsideTemp"></div>
+  <p>Current weather: <div id="weather"></div>
+  </div>
+
+  <div class="row justify-content-center">
+    <input id="cityName" type="text" name="city"/>
+    <button type="button" class="btn btn-info" id="cityButton">Enter</button>
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+    <script src="src/Thermostat.js"></script>
+    <script src="src/scripts.js"></script>
+  </body>
+</html>
